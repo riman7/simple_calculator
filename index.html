@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- simpleCalculator-->
+        <div id="simpleCalulator">
+        <h1>Simple Calculator</h1>
+          <div id="calculator">
+            <input id="display" type="text" value="" readonly name="display">
+            <table id="calctable">
+                <tr> <!--Row1-->
+                    <td onclick="display.value+='7'">7</td>
+                    <td onclick="display.value+='8'">8</td> 
+                    <td onclick="display.value+='9'">9</td>
+                    <td style="background-image: linear-gradient(180deg, rgb(126, 31, 31), rgb(184, 125, 125));" onclick="del()" >Del</td>
+                    <td  style="background-image: linear-gradient(180deg, rgb(126, 31, 31), rgb(184, 125, 125));"onclick="display.value=''"> AC </td> 
+                </tr>
+                <tr> <!--Row2-->
+                    <td onclick="display.value+='4'">4</td> 
+                    <td onclick="display.value+='5'">5</td> 
+                    <td onclick="display.value+='6'">6</td>
+                    <td onclick="display.value+='/'">÷</td> 
+                    <td onclick="display.value+='*'">×</td>
+                </tr>
+                <tr> <!--Row3-->
+                    <td onclick="display.value+='1'">1</td>
+                    <td onclick="display.value+='2'">2</td>
+                    <td onclick="display.value+='3'">3</td>
+                    <td rowspan="2" onclick="display.value+='+'">+</td>
+                    <td  onclick="display.value+='-'"> - </td> 
+                </tr>
+                <tr> <!--Row4-->
+                    <td onclick="display.value+='0'">0</td>
+                    <td onclick="display.value+='00'">00</td>
+                    <td onclick="display.value+='.'">.</td>
+                    <td onclick=calculate(); id="equal"> = </td> 
+                </tr>
+            </table>
+          </div>
+        </div>
+
+
+
+      <script src="/script.js"></script>
+    
+</body>
+</html>
